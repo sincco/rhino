@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<config>
+	<app>
+		<key>748B64FC7C124606B720227DD1816B5F</key>
+		<name>sfphp</name>
+		<company>sincco.com</company>
+	</app>
+	<front>
+		<url>http://127.0.0.1/rhino/iniciar.php</url>
+	</front>
+	<bases>
+		<base>
+			<host>sfphp</host>
+			<user>sfphp</user>
+			<password>erRFYWQHrGi8WMWoFbSODnNxSSmhxqDmUmfXngq54kA=</password>
+			<dbname>sfphp</dbname>
+			<type>mysql</type>
+			<default>1</default>
+		</base>
+		<type>DEFAULT</type>
+		<name>sfphp</name>
+		<ssonly>0</ssonly>
+		<inactivity>60</inactivity>
+	</bases>
+	<session>
+		<type>DEFAULT</type>
+		<name>sfphp</name>
+		<ssonly>0</ssonly>
+		<inactivity>60</inactivity>
+	</session>
+	<dev>
+		<log>1</log>
+		<showerrors>0</showerrors>
+		<showphperrors>0</showphperrors>
+	</dev>
+</config>

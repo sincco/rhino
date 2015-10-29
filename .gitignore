@@ -1,0 +1,6 @@
+#Excluir la APP del repositorio maestro
+/Etc/Config/config_local.xml
+/Etc/Sesiones/*
+/Etc/Logs/*
+*.md
+*.md5
