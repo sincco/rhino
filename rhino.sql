@@ -5,6 +5,23 @@
 -- --------------------------------------------------------
 
 --
+-- Estructura de tabla para la tabla `usuarios`
+--
+
+CREATE TABLE IF NOT EXISTS `usuarios` (
+  `usuario` int(11) NOT NULL AUTO_INCREMENT,
+  `clave` varchar(150) NOT NULL,
+  `password` varchar(150) NOT NULL,
+  `nombre` varchar(150) NOT NULL,
+  `activo` int(11) NOT NULL DEFAULT '1',
+  PRIMARY KEY (`usuario`),
+  UNIQUE KEY `usuario_clave` (`clave`) COMMENT 'usuario_clave'
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+
+
+-- --------------------------------------------------------
+
+--
 -- Estructura de tabla para la tabla `estados`
 --
 

@@ -2,35 +2,30 @@
 <config>
 	<app>
 		<key>748B64FC7C124606B720227DD1816B5F</key>
-		<name>sfphp</name>
-		<company>sincco.com</company>
+		<name>RHino</name>
+		<company>sincco</company>
 	</app>
 	<front>
-		<url>http://127.0.0.1/rhino/iniciar.php</url>
+		<url>http://127.0.0.1/rhino/</url>
 	</front>
 	<bases>
-		<base>
-			<host>sfphp</host>
-			<user>sfphp</user>
+		<default>
+			<host>localhost</host>
+			<user>rhino</user>
 			<password>erRFYWQHrGi8WMWoFbSODnNxSSmhxqDmUmfXngq54kA=</password>
-			<dbname>sfphp</dbname>
+			<dbname>rhino</dbname>
 			<type>mysql</type>
-			<default>1</default>
-		</base>
-		<type>DEFAULT</type>
-		<name>sfphp</name>
-		<ssonly>0</ssonly>
-		<inactivity>60</inactivity>
+		</default>
 	</bases>
-	<session>
-		<type>DEFAULT</type>
-		<name>sfphp</name>
-		<ssonly>0</ssonly>
-		<inactivity>60</inactivity>
-	</session>
 	<dev>
 		<log>1</log>
-		<showerrors>0</showerrors>
-		<showphperrors>0</showphperrors>
+		<showerrors>1</showerrors>
+		<showphperrors>1</showphperrors>
 	</dev>
+	<sesion>
+		<type>DEFAULT</type>
+		<name>rhino</name>
+		<ssl>0</ssl>
+		<inactivity>60</inactivity>
+	</sesion>
 </config>
