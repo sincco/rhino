@@ -28,19 +28,27 @@ class Modelos_Empleados extends Sfphp_Modelo
 	 */
 	public function post($data)
 	{
-		$query = "
-		INSERT INTO empleados
+		$query = "INSERT INTO empleados
 		SET
-			razonSocial = '{$data['cliente']['razonSocial']}',
-			rfc = '{$data['cliente']['rfc']}',
-			direccionFiscal = '{$data['cliente']['direccionFiscal']}',
-			activo = 1;";
+			nombres = '{$data['generales']['nombres']}',
+			apellidos = '{$data['generales']['apellidos']}',
+			nacionalidad = '{$data['generales']['nacionalidad']}',
+			genero = '{$data['generales']['genero']}',
+			estadoCivil = '{$data['generales']['estadoCivil']}',
+			nacimiento = '{$data['generales']['nacimiento']}',
+			correo = '{$data['generales']['correo']}',
+			telefonoPrincipal = '{$data['generales']['telefonoPrincipal']}',
+			direccion = '{$data['generales']['direccion']}',
+			estado = '{$data['generales']['estado']}',
+			municipio = '{$data['generales']['municipio']}',
+			localidad = '{$data['generales']['localidad']}',
+			codigoPostal = '{$data['generales']['codigoPostal']}',
+			;";
 		$idInsert = $this->db->insert($query);
 		if($idInsert) 
 		{
 			if(trim($data['contactos']['nombre']) != "") {
-				$query = "
-				INSERT INTO empleadosContactos
+				$query = "INSERT INTO empleadosContactos
 				SET
 					cliente = '$idInsert',
 					nombre = '{$data['contactos']['nombre']}',

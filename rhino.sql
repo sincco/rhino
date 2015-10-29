@@ -149,17 +149,17 @@ CREATE TABLE IF NOT EXISTS `empleados` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `experiencias`
+-- Table structure for table `empleadosExperiencias`
 --
 
-CREATE TABLE IF NOT EXISTS `experiencias` (
-	`experiencia` int(11) NOT NULL AUTO_INCREMENT,
+CREATE TABLE IF NOT EXISTS `empleadosExperiencias` (
+	`empleadoExperiencia` int(11) NOT NULL AUTO_INCREMENT,
 	`puesto` varchar(45)  NOT NULL,
 	`fechaDesde` date NOT NULL,
 	`fechaHasta` date NOT NULL,
 	`detalle` tinytext  DEFAULT NULL,
 	`empleado` int(11) NOT NULL,
-	PRIMARY KEY (`experiencia`)
+	PRIMARY KEY (`empleadoExperiencia`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=1;
 
 -- --------------------------------------------------------
